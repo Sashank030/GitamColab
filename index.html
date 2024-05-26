@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>GITAM Colab</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body id = "homepage">
+  <div class="navbar-cont">
+    <nav class="navbar">
+      <div class="navbar-brand" href="#">
+        <a href="index.html" class="gc-logo">GC</a>
+      </div>
+      
+      <div class="container">
+        <a class="nav-link" id="navItem1" href="#home" >Home</a>
+        <a class="nav-link" href="#about" id="">About</a>
+        <a class="nav-link" href="#contact1" id="">Contact Us</a>
+      </div>
+
+      <div class="profile-cont">
+        <img id="profile" class="profile" width="48" height="48" src="https://img.icons8.com/fluency-systems-regular/48/FFFFFF/user-male-circle--v1.png" alt="user-male-circle--v1" onclick="toggleDropdown()"/>
+        <div id="profile-dropdown" class="profile-dropdown">
+          <a href="login.html">Sign In</a>
+          <a href="signup.html">Sign Up</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <div id = "home" class="video-cont">
+      <video class="video" autoplay muted loop id="myVideo">
+          <source src="STG_vSnap (2).mp4" type="video/mp4">
+      </video>
+  </div>
+  
+  <div class="products-container">
+    <h1 class="products-head" id="about">About</h1>
+      
+    <div class="products">
+      <div class="products-card-1">
+        <div class="products-text">
+          <h1 class="product-name">What We Do</h1>
+          <p class="product-price">GITAM Colab seeks to establish an all-encompassing online platform fostering enhanced collaboration among university students. It facilitates dynamic collaboration through project creation, team formation, and real-time tools, encouraging interdisciplinary connections among students with diverse academic backgrounds.<p>
+          <p class="product-price">The platform empowers students to efficiently manage access to collaborative spaces and enables them to showcase their skills and experiences through individual profiles. Through GITAM Colab's implementation, universities can leverage digital connectivity to transcend physical barriers, creating a thriving online community.<p>
+        </div>
+        <div class="buy-now-cont">
+          <button class="buy-now">View More</button>
+        </div>
+      </div>
+    
+      <div class="products-card-2">
+        <div class="products-text">
+          <h1 class="product-name">What We Offer</h1>
+          <ul>
+            <li>
+            <p class="product-price">Streamlined communication channels ensure efficient collaboration and quick decision-making through instant messaging, video conferencing, and discussion forums.</p></li>
+            <li>
+            <p class="product-price">Managing access to collaborative spaces protects sensitive data while enabling productive teamwork by giving the right people access to the right resources.</p></li>
+            <li>
+            <p class="product-price">Individual profiles showcasing skills help managers identify the best-fit individuals for tasks and foster a culture of recognition and development.</p></li>
+            <li>
+            <p class="product-price">Project creation, team formation, and real-time tools streamline initiatives with intuitive project management, collaborative editing, and shared task lists.</p></li>
+          </ul>
+        </div>
+        <div class="buy-now-cont">
+          <button class="buy-now">View More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="features">
+    <div class="f1">
+      <h1 class="f1-head">Immersive Experiences</h1>
+      <div class="view-specs">
+        <button class="view-specs-button">+</button>
+      </div>
+    </div>
+    
+    <div class="f23">
+      <div class="f2">
+        <h1 class="f1-head">Enhanced Interactiveness</h1>
+        <div class="view-specs">
+          <button class="view-specs-button">+</button>
+        </div>
+      </div>
+
+      <div class="f3">
+        <h1 class="f1-head">Collaborative Spaces</h1>
+        <div class="view-specs">
+          <button class="view-specs-button">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="footer" id="contact1">
+    <div class="social-cont">
+      <h1 class="contact-head">Contact Us</h1>
+      <div class="soc-link-cont">
+        <a class="social-link" href="https://twitter.com"><img width="30" height="30" src="icons8-twitter-30.png"/><a>
+        <a class="social-link"
+          href="https://www.instagram.com/sarath_kothapalli/"><img width="30" height="30" src="icons8-instagram-30.png"/><a>
+        <a class="social-link" href="https://facebook.com"><img width="30" height="30" src="icons8-facebook-30.png"/><a>
+      </div>
+    </div>
+    <div class="row">
+      <a class="footer-link" href="#">Our Services</a>
+      <a class="footer-link" href="#">Privacy Policy</a>
+      <a class="footer-link" href="#">Terms & Conditions</a>
+    </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

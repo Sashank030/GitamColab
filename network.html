@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GC Network</title>
+  <link rel="stylesheet" href="network.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="navbar-cont">
+    <nav class="navbar">
+      <div class="navbar-brand" href="#">
+        <a href="index.html" class="gc-logo">GC</a>
+      </div>
+
+      <div class="container">
+        <a class="nav-link" id="navItem1" href="network.html" >Network</a>
+        <a class="nav-link" href="post.html" id="">Post</a>
+        <a class="nav-link" href="notifications.html" id="">Notifications</a>
+      </div>
+
+      <div class="profile-cont">
+        <img id="profile" class="profile" width="48" height="48" src="https://img.icons8.com/fluency-systems-regular/48/FFFFFF/user-male-circle--v1.png" alt="user-male-circle--v1" onclick="toggleDropdown()"/>
+        <div id="profile-dropdown" class="profile-dropdown">
+          <a href="profile.html">Profile</a>
+          <a href="login.html">Logout</a>
+
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="banner">
+    <p class="banner-text">Start Collaborating!</p>
+    <div class="search-bar-cont">
+      <input id="search_text" class="search-bar" type="text">
+      <img id="userFindInputButton" onclick="searchText()" class="search-icon" src="https://static-00.iconduck.com/assets.00/search-icon-2044x2048-psdrpqwp.png"/>
+    </div>
+  </div>
+  <div id="result" style="display: none;"></div>
+
+
+
+  <h1 class="all-posts-head">All Posts</h1>
+  <div class="all-posts-cont">
+      <div class="card1">
+        <div class="card1-head-cont">
+          <div class="head-cont">
+            <h1 class="card1-head" id="title" >Drone Service App</h1>
+            <p class="card1-para" id="role" >Android App Developer </p>
+          </div>
+          <div class="bookmarks">
+            <img onclick="bookmarkToggle()" id="bookmark" class="bookmark-img" src="icons8-bookmark-40.png"/>
+          </div>
+        </div>
+  
+        <div class="list-cont">
+          <ul>
+            <li class="list-item"  id="criteria-list" >3rd year or higher CSE Students</li>
+            <li class="list-item"  id="criteria-list" >Knowledge on Kotlin, Flutter</li>
+          </ul>
+        </div>
+  
+        <div class="apply-now-cont">
+          <button class="apply-now" onclick="openApplyPage('Drone Service App','Android App Developer','3rd year or higher CSE Students','Knowledge on Kotlin, Flutter','Created by Sarath Kothapalli','Posted 1d ago')">Apply Now</button>
+        </div>
+  
+        <div class="footer-cont">
+          <p class="createdby" id="createdby">Created by Sarath Kothapalli</p>
+          <p class="time" id="time" >Posted 1d ago</p>
+        </div>
+      </div>
+      <div class="card2">
+        <div class="card1-head-cont">
+          <div class="head-cont">
+            <h1 class="card1-head" id="title" >E-Resource</h1>
+            <p class="card1-para" id="role" >Web Development (For Backend)</p>
+          </div>
+          <div class="bookmarks">
+            <img onclick="bookmarkToggle()" id="bookmark" class="bookmark-img" src="icons8-bookmark-40.png"/>
+          </div>
+        </div>
+  
+        <div class="list-cont">
+          <ul>
+            <li class="list-item"  id="criteria-list" >3rd year or higher CSE Students</li>
+            <li class="list-item"  id="criteria-list" >Knowledge on PHP, NodeJS, JavaScript</li>
+          </ul>
+        </div>
+  
+        <div class="apply-now-cont">
+          <button class="apply-now" onclick="openApplyPage('E-Resource','Web Development (For Backend)','3rd year or higher CSE Students','Knowledge on PHP, NodeJS, JavaScript','Created by Ali','Posted 2h ago')">Apply Now</button>
+        </div>
+  
+        <div class="footer-cont">
+          <p class="createdby" id="createdby" >Created by Ali</p>
+          <p class="time" id="time" >Posted 2h ago</p>
+        </div>
+      </div>
+      <div class="card3">
+        <div class="card1-head-cont">
+          <div class="head-cont">
+            <h1 class="card1-head" id="title" >AI and Chatbot</h1>
+            <p class="card1-para" id="role" >AI ML Developer</p>
+          </div>
+          <div class="bookmarks">
+            <img onclick="bookmarkToggle()" id="bookmark" class="bookmark-img" src="icons8-bookmark-40.png"/>
+          </div>
+        </div>
+  
+        <div class="list-cont">
+          <ul>
+            <li class="list-item"  id="criteria-list">3rd year or higher CSE Students</li>
+            <li class="list-item"  id="criteria-list">Knowledge on Generative AI/ML, TensorFLow</li>
+          </ul>
+        </div>
+  
+        <div class="apply-now-cont">
+          <button class="apply-now" onclick="openApplyPage('AI and Chatbot','AI ML Developer','3rd year or higher CSE Students','Knowledge on Generative AI/ML, TensorFLow','Created by Mike Ross','Posted 1d ago')">Apply Now</button>
+        </div>
+  
+        <div class="footer-cont">
+          <p class="createdby" id="createdby" >Created by Mike Ross</p>
+          <p class="time" id="time" >Posted 1d ago</p>
+        </div>
+      </div>
+  </div>
+  
+  <h1 class="ml-head">Machine Learning</h1>
+  <div class="all-posts-cont">
+    <div class="card1">
+      <div class="card1-head-cont">
+        <div class="head-cont">
+          <h1 class="card1-head" id="title" >Music Suggestions</h1>
+          <p class="card1-para" id="role" >ML Developer</p>
+        </div>
+        <div class="bookmarks">
+          <img onclick="bookmarkToggle()" id="bookmark" class="bookmark-img" src="icons8-bookmark-40.png"/>
+        </div>
+      </div>
+
+      <div class="list-cont">
+        <ul>
+          <li class="list-item" id="criteria-list" >3rd year or higher CSE Students</li>
+          <li class="list-item" id="criteria-list" >Knowledge on Objective Tensor Flow andd EPOCHS</li>
+        </ul>
+      </div>
+
+      <div class="apply-now-cont">
+        <button class="apply-now" onclick="openApplyPage('Music Suggestions','ML Developer','3rd year or higher CSE Students','Knowledge on Objective Tensor Flow andd EPOCHS','Created by Hohn Doe','Posted 3d ago')">Apply Now</button>
+      </div>
+
+      <div class="footer-cont">
+        <p class="createdby" id="createdby" >Created by John Doe</p>
+        <p class="time" id="time" >Posted 3d ago</p>
+      </div>
+    </div>
+    <div class="card2">
+      <div class="card1-head-cont">
+        <div class="head-cont">
+          <h1 class="card1-head" id="title" >Object Detection</h1>
+          <p class="card1-para" id="role" >Android and iOS Developer</p>
+        </div>
+        <div class="bookmarks">
+          <img onclick="bookmarkToggle()" id="bookmark" class="bookmark-img" src="icons8-bookmark-40.png"/>
+        </div>
+      </div>
+
+      <div class="list-cont">
+        <ul>
+          <li class="list-item" id="criteria-list">3rd year or higher CSE Students</li>
+          <li class="list-item" id="criteria-list">Knowledge on Swift, TensorFLow, Android Studio, Python Libraries</li>
+        </ul>
+      </div>
+
+      <div class="apply-now-cont">
+        <button class="apply-now" onclick="openApplyPage('Object Detection','Android and iOS Developer','3rd year or higher CSE Students','Knowledge on Swift, TensorFLow, Android Studio, Python Libraries','Created by Ali','Posted 2h ago')">Apply Now</button>
+      </div>
+
+      <div class="footer-cont">
+        <p class="createdby" id="createdby" >Created by Ali</p>
+        <p class="time" id="time" >Posted 2h ago</p>
+      </div>
+    </div>
+    <div class="card3">
+      <div class="card1-head-cont">
+        <div class="head-cont">
+          <h1 class="card1-head" id="title" >GenAI</h1>
+          <p class="card1-para" id="role" >Generative AI Developer</p>
+        </div>
+        <div class="bookmarks">
+          <img onclick="bookmarkToggle()" id="bookmark" class="bookmark-img" src="icons8-bookmark-40.png"/>
+        </div>
+      </div>
+
+      <div class="list-cont">
+        <ul>
+          <li class="list-item" id="criteria-list">3rd year or higher CSE Students</li>
+          <li class="list-item" id="criteria-list">Knowledge on Generative AI/ML</li>
+        </ul>
+      </div>
+
+      <div class="apply-now-cont">
+        <button class="apply-now" onclick="openApplyPage('GenAI','Generative AI Developer','3rd year or higher CSE Students','Knowledge on Generative AI/ML','Created by John Doe','Posted 3d ago')">Apply Now</button>
+      </div>
+
+      <div class="footer-cont">
+        <p class="createdby" id="createdby" >Created by John Doe</p>
+        <p class="time" id="time" >Posted 3d ago</p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="network.js"></script>
+</body>

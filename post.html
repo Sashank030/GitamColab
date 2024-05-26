@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GC Post</title>
+  <link rel="stylesheet" href="post.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+</head>
+
+<body>
+  <div class="navbar-cont">
+    <nav class="navbar">
+      <div class="navbar-brand" href="#">
+        <a href="index.html" class="gc-logo">GC</a>
+      </div>
+
+      <div class="container">
+        <a class="nav-link" id="navItem1" href="network.html" >Network</a>
+        <a class="nav-link" href="index.html" id="">Post</a>
+        <a class="nav-link" href="notifications.html" id="">Notifications</a>
+      </div>
+
+      <div class="profile-cont">
+        <img id="profile" class="profile" width="48" height="48" src="https://img.icons8.com/fluency-systems-regular/48/FFFFFF/user-male-circle--v1.png" alt="user-male-circle--v1" onclick="toggleDropdown()"/>
+        <div id="profile-dropdown" class="profile-dropdown">
+          <a href="profile.html">Profile</a>
+          <a href="login.html">Logout</a>
+
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="banner">
+    <p class="banner-text"></p>
+  </div>
+
+  <div class="cont">
+    <div id="apply">
+      <h3>Project Title :</h3>
+      <input type="text" class="boxtake" />
+      <h3>Skills Required :</h3>
+      <input type="text" class="boxtake" />
+      <h3>Description of project in detail :</h3>
+      <input type="text" class="boxtake" /><br />
+      
+      <div id="applydown">
+        <button id="branch" onclick="myFunction()" class="abtn">
+          Department&nbsp;<i class="bi bi-arrow-down-circle"></i>
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+          <button onclick="changeDepartment('Engineering')">
+            Engineering
+          </button>
+          <button onclick="changeDepartment('Management')">Management</button>
+          <button onclick="changeDepartment('Architecture')">
+            Architecture
+          </button>
+          <button onclick="changeDepartment('Humanities')">Humanities</button>
+          <button onclick="changeDepartment('Sciences')">Sciences</button>
+        </div>
+        <div id="timegap">
+          <input class="time" type="date" id="dateInput"/>
+          <h3 style="font-weight: 300; color: #272727; margin: 8px; align-items: center;">TO</h3>
+          <input class="time" type="date" id="dateInput" />
+        </div>
+      </div>
+
+      
+      
+      <div class="button-cont">
+        <button id="submitr" type="submit">SUBMIT</button>
+      </div>
+    </div>
+    <div id="brand">
+      <div class="Sent"><span style="font-size:175%; color: #e8e8e8">Lets</div>
+      <div class="Sent"><span style="font-size:175%; padding-top: -10%; color: #c81212">Connect!</div>
+    </div>
+  </div>
+
+  
+
+  
+  <script src="post.js"></script>
+</body>
