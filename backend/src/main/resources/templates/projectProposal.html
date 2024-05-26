@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Proposal Page</title>
+    <link rel="stylesheet" th:href="@{../styles.css}">
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Project Proposal Form</h2>
+        
+        <div th:if="${message != null}" class="message"> 
+           [[${message}]]
+        </div>
+          
+        <form 
+        
+        th:action="@{/projectProposal}" 
+        method="post"
+        role="form"
+        th:object="${projectDetails}"
+        >
+
+            <div class="input-group">
+                <label for="name">Project Name:</label>
+                <input th:field="*{projectName}" type="text" id="projectName" name="projectName" placeholder="Enter your Project Name" required>
+            </div>
+            <div class="input-group">
+                <label for="description">Description:</label>
+                <input th:field="*{description}" type="text" id="description" name="description" placeholder="Enter Project Description"  required>
+            </div>
+            <div class="input-group">
+                <label for="adminId">Admin Id:</label>
+                <input th:field="*{adminId}" type="text" id="adminId" name="adminId" placeholder="Enter your Gitam ID" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="requiredPeople">Required Number of Teammates:</label>
+                <input th:field="*{requiredPeople}" type="text" id="requiredPeople" name="requiredPeople" placeholder="Enter required number of team mates" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="skills">Skills:</label>
+                <input th:field="*{skills}" type="text" id="skills" name="skills" placeholder="Enter skills required for this project" required>
+            </div>
+            
+			<div class="input-group">
+			     <label for="ece">ECE:</label>
+			     <input th:field="*{ece}" type="number" min="0" id="ece" name="ece" placeholder="ECE count" required>
+			</div>
+			    
+			<div class="input-group">
+			     <label for="csc">CSC:</label>
+			     <input th:field="*{csc}" type="number" min="0" id="csc" name="csc" placeholder="csc" required>
+			</div>
+			
+			<div class="input-group">
+			     <label for="mech">MECH:</label>
+			     <input th:field="*{mech}" type="number" min="0" id="mech" name="mech" placeholder="mech" required>
+			</div>
+
+			<div class="input-group">
+			      <label for="civil">CIVIL:</label>
+			      <input th:field="*{civil}" type="number" min="0" id="civil" name="civil" placeholder="civil" required>
+			</div>
+			
+			<div class="input-group">
+			      <label for="it">IT:</label>
+			      <input th:field="*{it}" type="number" min="0" id="it" name="it" placeholder="it" required>
+			</div>
+			
+			<div class="input-group">
+			      <label for="chemical">CHEMICAL:</label>
+			      <input th:field="*{chemical}" type="number" min="0" id="chemical" name="chemical" placeholder="chemical" required>
+			</div>
+			
+			<div class="input-group">
+				<label for="startDate">Start Date:</label>
+				<input th:field="*{startDate}" type="date" id="startDate" name="startDate" placeholder="startDate" required>
+			</div>
+						
+			<div class="input-group">
+				<label for="endDate">End Date:</label>
+				<input th:field="*{endDate}" type="date" id="endDate" name="endDate" placeholder="endDate" required>
+			</div>
+			
+			
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
